@@ -94,6 +94,20 @@ They all have Global Scope:
         </div>
       </section>
 
+      <section class="sec3">
+        <div class="div1">
+            <h2 class="heading-part1"> <strong>Event Loop</strong> </h2> <br>
+            <h2> Behind the scene how to work Event loop in Javascript</h2>
+          <p class="para"> Event loop (event loop) is a secret machenism of JavaScript through which JavaScript acts like a multi-threaded programming language externally despite being a single-threaded programming language. <br><br>
+            The event loop closely monitors the call stack and if the call stack is empty, sends the task from the event queue to the call stack to complete the execution. <br><br>
+            As we all know, JavaScript is a single-threaded asynchronous programming language. The point is, JavaScript is a single-threaded language; That means JavaScript can only do one thing at a time. And asynchronous is controlled by the browser environment. <br><br>            
+            When JavaScript gets something asynchronous, instead of putting it on the call stack to execute, it sends it to the Browser API. And in this Browser API, the asynchronous function completes the work with its scheduled time. After the task is completed, the asynchronous function enters the Event Queue. and waits to re-enter the call stack. This is where the event loop begins. <br><br> The function of the event loop is to keep track of the Call Stack and the Event Queue. When the call stack is empty, the event loop sends one event from the event queue to the call stack. And the event loop continues to execute the statement accordingly.
+            And when the asynchronous function is sent from the call stack to the Browser API, because the call stack is empty, JavaScript executes the next statements of the asynchronous function by sending them to the call stack, for this reason, the next code is executed before the asynchronous code is finished.           
+          </p>
+        </div>
+      </section>
+
+
 
    </main>
 </body>
