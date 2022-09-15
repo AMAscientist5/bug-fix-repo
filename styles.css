@@ -193,5 +193,18 @@ button {
   }
 }
 
+@media only screen and (min-width: 700px) {
+
+  #histories {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 32%;
+    flex-direction: column;
+  }
+
+}
+
 
 
