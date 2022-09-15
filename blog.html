@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Site</title>
+    <title>My Blog</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            
+        }
+        .header-title{
+            background-color: #10B0DA;
+            color: white;
+            height: 60px;
+            font-size: 2rem;
+            padding-top: 30px ;
+            padding-left: 30px;
+            border-bottom: 10px solid #2573A4;
+        }
+        .main{
+            background-color: #DEE8EA;     
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;       
+        }
+        .sec1, .sec2, .sec3, .sec4{
+            padding: 10px;
+        }
+        .para{
+            font-size: 1.5rem;
+            text-align: center;        
+        }
+        .div1{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .heading-part1{
+            font-size: 2.5rem;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        .order-list{
+            text-align: left;
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+   <header>
+        <h1 class="header-title">My Javascript Blog</h1>
+   </header>
+   <main class="main">
+      <section class="sec1">
+              <div class="div1">
+                  <h2 class="heading-part1">Differences between Local Storage and Session Storage</h2>
+                <p class="para"> <strong>local storage:</strong>
+                    The storage capacity of local storage is 5MB/10MB
+                    As it is not session-based or does not expire time duration. it must be deleted via javascript or manually
+               <br><br>
+                    <strong>Session Storage:</strong>
+                    The storage capacity of session storage is 5MB
+                    It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is close
+                    
+                    localStorage and sessionStorage are almost the same. Both have the following rules: They store key/value pairs for a particular domain. The values stored may only be strings.
+                </p>
+              </div>
+      </section>
+
+
+   </main>
 </body>
 </html>
