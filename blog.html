@@ -66,33 +66,30 @@
                <br><br>
                     <strong>Session Storage:</strong>
                     The storage capacity of session storage is 5MB
-                    It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is close
-                    
+                    It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is close                  
                     localStorage and sessionStorage are almost the same. Both have the following rules: They store key/value pairs for a particular domain. The values stored may only be strings.
                 </p>
               </div>
       </section>
-      <section class="sec2">
+       <section class="sec2">
         <div class="div1">
             <h2 class="heading-part1">Global Scope and Block Scope</h2>
           <p class="para">
            <strong>What is local scope and global scope in JavaScript?</strong> 
-Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global. <br>
+                Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global. <br>
 
-Global variables are those declared outside of a block. <br> Local variables are those declared inside of a block <br>
-Before ES6 (2015), JavaScript had only Global Scope and Function Scope. ES6 introduced two important new JavaScript keywords: let and const. These two keywords provide Block Scope in JavaScript. <br>
-<br>
-Variables declared inside a { } block cannot be accessed from outside the block:
-Global JavaScript Variables
-A variable declared Globally   (outside any function) becomes GLOBAL. A global variable has Global Scope:
-Global variables can be accessed from anywhere in a JavaScript program. <br>
-<br>
-Variables declared with var, let and const are quite similar when declared outside a block.
-They all have Global Scope:
-
-          </p>
-        </div>
-      </section>
+                Global variables are those declared outside of a block. <br> Local variables are those declared inside of a block <br>
+                Before ES6 (2015), JavaScript had only Global Scope and Function Scope. ES6 introduced two important new JavaScript keywords: let and const. These two keywords provide Block Scope in JavaScript. <br>
+                <br>
+                Variables declared inside a { } block cannot be accessed from outside the block:
+                Global JavaScript Variables
+                A variable declared Globally   (outside any function) becomes GLOBAL. A global variable has Global Scope:
+                Global variables can be accessed from anywhere in a JavaScript program. <br>
+                <br>
+                Variables declared with var, let and const are quite similar when declared outside a block.
+                They all have Global Scope:     </p>
+               </div>
+            </section>
 
       <section class="sec3">
         <div class="div1">
@@ -102,12 +99,27 @@ They all have Global Scope:
             The event loop closely monitors the call stack and if the call stack is empty, sends the task from the event queue to the call stack to complete the execution. <br><br>
             As we all know, JavaScript is a single-threaded asynchronous programming language. The point is, JavaScript is a single-threaded language; That means JavaScript can only do one thing at a time. And asynchronous is controlled by the browser environment. <br><br>            
             When JavaScript gets something asynchronous, instead of putting it on the call stack to execute, it sends it to the Browser API. And in this Browser API, the asynchronous function completes the work with its scheduled time. After the task is completed, the asynchronous function enters the Event Queue. and waits to re-enter the call stack. This is where the event loop begins. <br><br> The function of the event loop is to keep track of the Call Stack and the Event Queue. When the call stack is empty, the event loop sends one event from the event queue to the call stack. And the event loop continues to execute the statement accordingly.
-            And when the asynchronous function is sent from the call stack to the Browser API, because the call stack is empty, JavaScript executes the next statements of the asynchronous function by sending them to the call stack, for this reason, the next code is executed before the asynchronous code is finished.           
-          </p>
+            And when the asynchronous function is sent from the call stack to the Browser API, because the call stack is empty, JavaScript executes the next statements of the asynchronous function by sending them to the call stack, for this reason, the next code is executed before the asynchronous code is finished.</p>
         </div>
       </section>
 
-
+      <section class="sec4">
+        <div class="div1">
+            <h2 class="heading-part1">Differences between Local Storage and Session Storage</h2>
+          <p class="para"> 
+          <strong>  When value is undefined:</strong> 
+          <ol class="order-list">
+            <li> Variable that is not initialized will give undefined</li>
+            <li> Function with no return will give undefined.</li>
+            <li>Parameter that is not passed will be undefined. </li>
+            <li> If the return has nothing on the right side will give undefined </li>
+            <li> Property that doesn’t exist on an object, to get this will give undefined </li>
+            <li>Accessing array elements outside of the index range will give undefined </li>
+            <li> Deleting an element inside an array, then trying to get that will give undefined</li>
+            <li> Set a value directly undefined  </li>
+          </ol>     </p>
+        </div>
+</section>
 
    </main>
 </body>
